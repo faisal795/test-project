@@ -5,7 +5,7 @@ function Apitest() {
   const [Result, setResult] = useState([]);
 
   const fichapi = async () => {
-    const data = await fetch(`https://faisal795.github.io/https://api.atwrap.ae/products`);
+    const data = await fetch(`https://api.atwrap.ae/products`, {mode:'cors'});
     const result = await data.json();
 
     setResult(result);
