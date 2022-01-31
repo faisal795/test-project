@@ -1,5 +1,6 @@
 {
   "homepage": "https://faisal795.github.io/test-project",
+  "proxy": "https://api.atwrap.ae/products",
   "name": "my-app",
   "version": "0.1.0",
   "private": true,

@@ -38,7 +38,10 @@ function Apitest() {
                         <h5>{curntElmnt.name}</h5>
                         <p>
                           {curntElmnt.variants.map((price) => {
-                            return "Rs. " + price.price;
+                            if (price.size === 'Small') {
+                              return "Rs. " + price.price;
+                            }
+                            
                           })}
                         </p>
                       </div>
